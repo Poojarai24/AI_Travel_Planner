@@ -122,8 +122,13 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+travel_planner/
+.env
+__pycache__/
+
 .env
 .venv
+.travel_planner
 env/
 venv/
 ENV/
