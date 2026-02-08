@@ -89,28 +89,28 @@ if st.button("✨ Generate Travel Plan"):
 
 st.divider()
 
-question = st.text_input("🤔 Ask something about your trip")
+# question = st.text_input("🤔 Ask something about your trip")
 
-if st.button("Get Answer"):
+# if st.button("Get Answer"):
 
-    if not st.session_state.travel_plan:
-        st.warning("Generate travel plan first.")
-    elif not question:
-        st.warning("Please enter a question.")
-    else:
-        with st.spinner("Finding answer..."):
+#     if not st.session_state.travel_plan:
+#         st.warning("Generate travel plan first.")
+#     elif not question:
+#         st.warning("Please enter a question.")
+#     else:
+#         with st.spinner("Finding answer..."):
 
-            context_prompt = f"""
-            Here is the existing travel plan:
-            {st.session_state.travel_plan}
+#             context_prompt = f"""
+#             Here is the existing travel plan:
+#             {st.session_state.travel_plan}
 
-            Answer this question clearly:
-            {question}
-            """
+#             Answer this question clearly:
+#             {question}
+#             """
 
-            response = travel_agent.run(context_prompt)
+#             response = travel_agent.run(context_prompt)
 
-            if hasattr(response, "content"):
-                st.markdown(response.content)
-            else:
-                st.markdown(str(response))
+#             if hasattr(response, "content"):
+#                 st.markdown(response.content)
+#             else:
+#                 st.markdown(str(response))
