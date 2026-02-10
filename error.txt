@@ -1,2 +1,5 @@
 file: config.py
 error: was not able to fetch the data from the API
+
+file: main.py
+error: in the Q&A section not able to get teh response my the LLama because of the huge data from the previous query
